@@ -67,7 +67,8 @@
 
             function calcularmontos(event) {
                 event.preventDefault();
-                if (nombre.value ===''||apellido.value ===''||email.value ==='') {
+                if (nombre.value ==''||apellido.value ==''||email.value =='') {
+                    /*
                     alert('Debes ingresar tu nombre, apellido y correo');
                     if (nombre.value ==='') {
                         nombre.focus();
@@ -77,7 +78,13 @@
                     }
                     if (nombre.value ==='') {
                         email.focus();
-                    }
+                    }*/
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong!',
+                        footer: '<a href>Why do I have this issue?</a>'
+                      });
                 }else{
                     if (pase_dia.value==0&&pase_dosdias.value==0&&pase_completo.value==0) {
                         alert('Debes elegir un pase');
