@@ -30,4 +30,59 @@
         endforeach;
         return json_encode($eventos_json);
     }
+
+   
+    /* Admin */
+
+    function obtenerPaginaActual() {
+        $archivo = basename($_SERVER['PHP_SELF']);
+        $pagina = str_replace(".php", "", $archivo);
+        return $pagina;
+    }
+    
+    /* Consultas **/
+    
+    /* Obtener todos los proyectos */
+    function obtenerInvitados() {
+        include 'bd_conexion.php';
+        try {
+            return $conn->query('SELECT invitado_id, nombre_invitado FROM invitados');
+        } catch(Exception $e) {
+            echo "Error! : " . $e->getMessage();
+            return false;
+        }
+    }
+    
+    // Obtener el nombre del Proyecto
+    function obtenerNombreInvitado($id = null) {
+        include 'bd_conexion.php';
+        try {
+            return $conn->query("SELECT  nombre_invitado FROM invitados WHERE invitado_id = {$id}");
+        } catch(Exception $e) {
+            echo "Error! : " . $e->getMessage();
+            return false;
+        }
+    }
+    
+    // Obtener las clases del Proyecto 
+    function obtenerEventosInvitado($id = null) {
+        include 'bd_conexion.php';
+        try {
+            return $conn->query("SELECT evento_id, nombre_evento, fecha_evento, hora_evento FROM eventos WHERE id_inv = {$id}");
+        } catch(Exception $e) {
+            echo "Error! : " . $e->getMessage();
+            return false;
+        }
+    }
+
+    // Obtener las clases del Proyecto 
+    function obtenerCategorias() {
+        include 'bd_conexion.php';
+        try {
+            return $conn->query('SELECT id_categoria, cat_evento FROM categoria');
+        } catch(Exception $e) {
+            echo "Error! : " . $e->getMessage();
+            return false;
+        }
+    }
 ?>
