@@ -94,3 +94,10 @@ INSERT INTO eventos (`nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_eve
 INSERT INTO eventos (`nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES ('Frameworks y librerias Open Source', '2020-12-06', '19:00:00', '2', '3', 'conf_09');
 INSERT INTO eventos (`nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES ('Creando una App en Android en una mañana', '2020-12-06', '10:00:00', '1', '4', 'sem_04');
 INSERT INTO eventos (`nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES ('Creando una App en iOS en una tarde', '2020-12-06', '17:00:00', '1', '1', 'sem_05');
+
+
+CREATE TABLE usuarios(
+    id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    usuario VARCHAR(50) NOT NULL,
+    password VARCHAR(60) NOT NULL
+);
