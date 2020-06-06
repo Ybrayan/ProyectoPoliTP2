@@ -42,7 +42,15 @@
     
     /* Consultas **/
     
+<<<<<<< HEAD
     /* Obtener todos los Invitados */
+=======
+<<<<<<< HEAD
+    /* Obtener todos los Invitados */
+=======
+    /* Obtener todos los proyectos */
+>>>>>>> 5ce4d5aa8cd2c524401d61afb4e5dff931e1ab1f
+>>>>>>> c3933025ea8a6d93d1f8b9a9bdbbcdfedcc57cfb
     function obtenerInvitados() {
         include 'bd_conexion.php';
         try {
@@ -53,7 +61,15 @@
         }
     }
     
+<<<<<<< HEAD
     // Obtener el nombre del Invitado
+=======
+<<<<<<< HEAD
+    // Obtener el nombre del Invitado
+=======
+    // Obtener el nombre del Proyecto
+>>>>>>> 5ce4d5aa8cd2c524401d61afb4e5dff931e1ab1f
+>>>>>>> c3933025ea8a6d93d1f8b9a9bdbbcdfedcc57cfb
     function obtenerNombreInvitado($id = null) {
         include 'bd_conexion.php';
         try {
@@ -64,7 +80,15 @@
         }
     }
     
+<<<<<<< HEAD
     // Obtener las eventos por invitado 
+=======
+<<<<<<< HEAD
+    // Obtener las eventos por invitado 
+=======
+    // Obtener las clases del Proyecto 
+>>>>>>> 5ce4d5aa8cd2c524401d61afb4e5dff931e1ab1f
+>>>>>>> c3933025ea8a6d93d1f8b9a9bdbbcdfedcc57cfb
     function obtenerEventosInvitado($id = null) {
         include 'bd_conexion.php';
         try {
@@ -75,7 +99,15 @@
         }
     }
 
+<<<<<<< HEAD
     // Obtener las categorias
+=======
+<<<<<<< HEAD
+    // Obtener las categorias
+=======
+    // Obtener las clases del Proyecto 
+>>>>>>> 5ce4d5aa8cd2c524401d61afb4e5dff931e1ab1f
+>>>>>>> c3933025ea8a6d93d1f8b9a9bdbbcdfedcc57cfb
     function obtenerCategorias() {
         include 'bd_conexion.php';
         try {

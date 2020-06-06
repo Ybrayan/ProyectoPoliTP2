@@ -14,7 +14,11 @@ if($accion === 'crear') {
     
     try {
         // Realizar la consulta a la base de datos
+<<<<<<< HEAD
         $stmt = $conn->prepare("INSERT INTO invitados (nombre_invitado) VALUES (?) ");
+=======
+        $stmt = $conn->prepare("INSERT INTO proyectos (nombre) VALUES (?) ");
+>>>>>>> c3933025ea8a6d93d1f8b9a9bdbbcdfedcc57cfb
         $stmt->bind_param('s', $proyecto);
         $stmt->execute();
         if($stmt->affected_rows > 0) {

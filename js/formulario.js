@@ -52,8 +52,16 @@ function validarRegistro(e) {
                                 type: 'success'
                             });
                         } else if(respuesta.tipo === 'login'){
+<<<<<<< HEAD
                             console.log('SSS');
                             
+=======
+<<<<<<< HEAD
+                            console.log('SSS');
+                            
+=======
+>>>>>>> 5ce4d5aa8cd2c524401d61afb4e5dff931e1ab1f
+>>>>>>> c3933025ea8a6d93d1f8b9a9bdbbcdfedcc57cfb
                             swal({
                                 title: 'Login Correcto',
                                 text: 'Presiona OK para abrir el dashboard',
