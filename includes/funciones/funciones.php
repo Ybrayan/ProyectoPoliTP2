@@ -42,50 +42,114 @@
     
     /* Consultas **/
     
+<<<<<<< HEAD
     /* Obtener todos los Invitados */
+=======
+<<<<<<< HEAD
+    /* Obtener todos los Invitados */
+=======
+<<<<<<< HEAD
+    /* Obtener todos los Invitados */
+=======
+    /* Obtener todos los proyectos */
+>>>>>>> 5ce4d5aa8cd2c524401d61afb4e5dff931e1ab1f
+>>>>>>> c3933025ea8a6d93d1f8b9a9bdbbcdfedcc57cfb
+>>>>>>> 9d7a40a142bd4270b61deba7156602cff7dabb9c
     function obtenerInvitados() {
         include 'bd_conexion.php';
         try {
             return $conn->query('SELECT invitado_id, nombre_invitado FROM invitados');
         } catch(Exception $e) {
+<<<<<<< HEAD
             //Se desactiva, puede causar inyeccion de codigo y mostrar fallos
             //echo "Error! : " . $e->getMessage();
+=======
+            echo "Error! : " . $e->getMessage();
+>>>>>>> 9d7a40a142bd4270b61deba7156602cff7dabb9c
             return false;
         }
     }
     
+<<<<<<< HEAD
     // Obtener el nombre del Invitado
+=======
+<<<<<<< HEAD
+    // Obtener el nombre del Invitado
+=======
+<<<<<<< HEAD
+    // Obtener el nombre del Invitado
+=======
+    // Obtener el nombre del Proyecto
+>>>>>>> 5ce4d5aa8cd2c524401d61afb4e5dff931e1ab1f
+>>>>>>> c3933025ea8a6d93d1f8b9a9bdbbcdfedcc57cfb
+>>>>>>> 9d7a40a142bd4270b61deba7156602cff7dabb9c
     function obtenerNombreInvitado($id = null) {
         include 'bd_conexion.php';
         try {
             return $conn->query("SELECT  nombre_invitado FROM invitados WHERE invitado_id = {$id}");
         } catch(Exception $e) {
+<<<<<<< HEAD
             //Se desactiva, puede causar inyeccion de codigo y mostrar fallos
             //echo "Error! : " . $e->getMessage();
+=======
+            echo "Error! : " . $e->getMessage();
+>>>>>>> 9d7a40a142bd4270b61deba7156602cff7dabb9c
             return false;
         }
     }
     
+<<<<<<< HEAD
     // Obtener las eventos por invitado 
+=======
+<<<<<<< HEAD
+    // Obtener las eventos por invitado 
+=======
+<<<<<<< HEAD
+    // Obtener las eventos por invitado 
+=======
+    // Obtener las clases del Proyecto 
+>>>>>>> 5ce4d5aa8cd2c524401d61afb4e5dff931e1ab1f
+>>>>>>> c3933025ea8a6d93d1f8b9a9bdbbcdfedcc57cfb
+>>>>>>> 9d7a40a142bd4270b61deba7156602cff7dabb9c
     function obtenerEventosInvitado($id = null) {
         include 'bd_conexion.php';
         try {
             return $conn->query("SELECT evento_id, nombre_evento, fecha_evento, hora_evento FROM eventos WHERE id_inv = {$id}");
         } catch(Exception $e) {
+<<<<<<< HEAD
             //Se desactiva, puede causar inyeccion de codigo y mostrar fallos
             //echo "Error! : " . $e->getMessage();
+=======
+            echo "Error! : " . $e->getMessage();
+>>>>>>> 9d7a40a142bd4270b61deba7156602cff7dabb9c
             return false;
         }
     }
 
+<<<<<<< HEAD
     // Obtener las categorias
+=======
+<<<<<<< HEAD
+    // Obtener las categorias
+=======
+<<<<<<< HEAD
+    // Obtener las categorias
+=======
+    // Obtener las clases del Proyecto 
+>>>>>>> 5ce4d5aa8cd2c524401d61afb4e5dff931e1ab1f
+>>>>>>> c3933025ea8a6d93d1f8b9a9bdbbcdfedcc57cfb
+>>>>>>> 9d7a40a142bd4270b61deba7156602cff7dabb9c
     function obtenerCategorias() {
         include 'bd_conexion.php';
         try {
             return $conn->query('SELECT id_categoria, cat_evento FROM categoria');
         } catch(Exception $e) {
+<<<<<<< HEAD
             //Se desactiva, puede causar inyeccion de codigo y mostrar fallos
             //echo "Error! : " . $e->getMessage();
+=======
+            echo "Error! : " . $e->getMessage();
+>>>>>>> 9d7a40a142bd4270b61deba7156602cff7dabb9c
             return false;
         }
     }
